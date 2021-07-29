@@ -1,0 +1,250 @@
+/* header */
+header {
+    background-color: $primary;
+    @include tablet(){
+        max-width: 720px;
+    }
+    @include mobile(){
+        max-width: 375px;
+    }
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 56px 30px 88px;
+    align-items: center;
+    @include tablet(){
+        padding: 30px 19px 30px 39px;
+    }
+    @include mobile(){
+        flex-direction: column;
+        padding: 10px 0 0 0;
+        border: 1px solid #fff;
+        text-align: center;
+    }
+}
+
+.logo {
+    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png")
+      no-repeat;
+    width: 80px;
+    height: 49px;
+    background-size: cover;
+    @include hide-text;
+    &:hover {
+        background-color: $primary-darken;
+    }
+    @include mobile(){
+        margin-bottom: 10px;
+        width: 50px;
+        height: 30px;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    @include mobile(){
+        width: 100%;
+    }
+    a {
+        display: block;
+        color: #ffffff;
+        font-size: $font-m;
+        font-weight: 400;
+        padding: 0 32px;
+        &:hover {
+            background-color: $primary-darken;
+        }
+        @include tablet () {
+            padding: 0 20px;
+        }
+    }    
+}
+
+.nav-link {
+    @include mobile(){
+        width: 50%;
+        border: 1px solid #fff;
+        padding: 8px 0;
+    }    
+}  
+/* header end */
+
+
+/* footer */
+footer {
+    background-color: $primary;
+    padding-top: 44px;
+    @include tablet(){
+        padding-top: 38px;
+    }
+    @include mobile(){
+        padding-top: 25px;
+    }
+}
+  
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    @include tablet(){
+        margin-bottom: 20px;
+    }
+    @include mobile(){
+        margin-bottom: 24px;
+    }
+}
+  
+.footer-nav {
+    padding-bottom: 36px;
+    display: flex;
+    @include mobile(){
+        display: none;
+    }
+    li {
+        padding-right: 48px;
+        @include tablet(){
+            padding-right: 40px;
+        }
+    }
+    a {
+        color: #fff;
+        font-size: $font-s;
+        font-weight: 400;
+        &:hover {
+            background-color: $primary-darken;
+        }
+    }
+}
+
+.social-media {
+    display: flex;
+    li {
+        margin-left: 32px;
+        @include tablet(){
+            margin-left: 24px;
+        }
+        @include extra-small(){
+            margin-left: 0px;
+        }
+    li:first-child {
+        margin-left: 0px;
+    }    
+        img {
+            height: 48px;
+            @include tablet(){
+                height: 24px;
+            }
+            @include extra-small(){
+                height: 20px;
+            }
+        }
+    }
+}
+
+.icon-phone {
+    width: 36px;
+    height: 36px;
+    margin-right: 22px;
+    @include tablet(){
+        width: 18px;
+        height: 18px;
+        margin-right: 11px;
+    }
+    @include mobile(){
+        width: 15px;
+        height: 15px;
+    }
+}
+  
+.icon-mail {
+    width: 40px;
+    height: 32px;
+    margin-right: 20px;
+    @include tablet(){
+        width: 20px;
+        height: 16px;
+        margin-right: 10px;
+    }
+    @include mobile(){
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.contact {
+    a {
+        color: #fff;
+        display: block;
+        font-size: $font-l;
+        font-weight: 400;
+        &:hover {
+            background-color: $primary-darken;
+        }
+        @include tablet(){
+            font-size: $font-m;
+        }
+        @include mobile(){
+            font-size: $font-s;
+        }
+        @include extra-small(){
+            font-size: $font-xs;
+        }
+    }
+} 
+
+.footer-list {
+    border-top: 1px solid #fff;
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    @include tablet(){
+        padding-top: 24px;
+    }
+    @include mobile(){
+        padding-top: 16px;
+        flex-direction: column;
+    }
+}
+
+.copright {
+    color: #fff;
+    padding-bottom: 39px;
+    font-size: $font-s;
+    font-weight: 400;
+    @include tablet(){
+        padding-bottom: 32px;
+    }
+    @include mobile(){
+        font-size: $font-xs;
+        padding-bottom: 8px;
+    }
+}
+  
+.statement {
+    display: flex;
+    @include mobile(){
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        display: block;
+        color: #fff;
+        font-size: $font-xs;
+        font-weight: 400;
+        margin-left: 48px;
+        &:hover {
+            background-color: $primary-darken;
+        }
+        @include tablet(){
+            margin-left: 24px;
+        }
+        @include mobile(){
+            margin-left: 0px;
+            padding-bottom: 8px;
+        }
+    }
+}
+/* footer end */

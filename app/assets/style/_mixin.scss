@@ -1,0 +1,27 @@
+// Large
+@mixin tablet{
+    @media (max-width: 992px){
+        @content;
+    };
+};
+
+// Medium
+@mixin mobile {
+    @media (max-width: 767px){
+        @content;
+    };
+};
+
+// Extra small
+@mixin extra-small{
+    @media (max-width: 992px){
+        @content;
+    };
+};
+
+// 圖片取代文字技巧
+@mixin hide-text {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+};

@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "Noto Sans", sans-serif, "Microsoft JhengHei";
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* RWD 圖片 */
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* RWD 容器 */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include tablet () {
+        max-width: 720px;
+    }
+    @include mobile () {
+        max-width: 375px;
+    }
+}
+
+
+
+
