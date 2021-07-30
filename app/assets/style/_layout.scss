@@ -1,12 +1,6 @@
 /* header */
 header {
-    background-color: $primary;
-    @include tablet(){
-        max-width: 720px;
-    }
-    @include mobile(){
-        max-width: 375px;
-    }
+    background-color: $primary;    
 }
 
 .header-container {
@@ -31,10 +25,7 @@ header {
     width: 80px;
     height: 49px;
     background-size: cover;
-    @include hide-text;
-    &:hover {
-        background-color: $primary-darken;
-    }
+    @include hide-text;    
     @include mobile(){
         margin-bottom: 10px;
         width: 50px;
@@ -125,13 +116,14 @@ footer {
         margin-left: 32px;
         @include tablet(){
             margin-left: 24px;
+            &:first-child {
+                margin-left: 0px;
+            } 
         }
         @include extra-small(){
             margin-left: 0px;
         }
-    li:first-child {
-        margin-left: 0px;
-    }    
+       
         img {
             height: 48px;
             @include tablet(){

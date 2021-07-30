@@ -2,27 +2,28 @@
   box-sizing: border-box;
 }
 
+// RWD 圖片
+img {
+    max-width: 100%; // 使圖片自適應父元素大小
+    height: auto;
+    vertical-align: middle; // 去除圖片下方2~3px空白    
+}
+
 body {
-    font-family: "Roboto", "Noto Sans", sans-serif, "Microsoft JhengHei";
+    font-family: $font-family-base;
     line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  line-height: 1.5;
 }
 
 a {
     text-decoration: none;
 }
 
-/* RWD 圖片 */
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-/* RWD 容器 */
+// RWD 容器
 .container {
     max-width: 1140px;
     margin: 0 auto;

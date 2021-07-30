@@ -1,0 +1,65 @@
+.faq-header {
+    font-family: $font-family-base;
+    font-size: $font-2l;
+    border-left: 8px solid $decoration;
+    padding-left: 16px;
+    margin-top: 96px;
+    @include tablet(){
+        margin-top: 60px;
+    }
+    @include mobile(){
+        padding-left: 8px;
+        margin-top: 28px;
+        font-size: 28px;
+    }
+}
+
+.faq-container {
+    margin-top: 60px;
+    margin-bottom: 160px;
+    @include tablet(){
+        margin-top: 40px;
+        margin-bottom: 96px;
+    }
+    @include mobile(){
+        margin-top: 24px;
+        margin-bottom: 56px;
+    }
+}
+
+.faq-title {
+    font-size: 32px;
+    margin-bottom: 36px;
+    @include tablet(){
+        margin-bottom: 32px;
+    }
+    @include mobile(){
+        font-size: $font-m;
+        margin-bottom: 24px;
+    }
+}
+
+.faq-item {
+    h3 {
+        font-size: $font-m;
+        margin-bottom: 16px;
+        @include mobile(){
+            margin-bottom: 8px;
+        }
+    }
+    p {
+        font-size: $font-s;
+        font-weight: 400;
+        margin-bottom: 32px;
+        padding-left: 95px;
+        @include tablet(){
+            margin-bottom: 24px;
+            padding-left: 60px;
+        }
+        @include mobile(){
+            margin-bottom: 20px;
+            padding-left: 0;
+        }
+
+    }
+}
