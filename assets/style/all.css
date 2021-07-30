@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,15 +45,40 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+body {
+  font-family: Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 720px; } }
+  @media (max-width: 767px) {
+    .container {
+      max-width: 375px; } }
+
 /* header */
 header {
   background-color: #AA0601; }
-  @media (max-width: 992px) {
-    header {
-      max-width: 720px; } }
-  @media (max-width: 767px) {
-    header {
-      max-width: 375px; } }
 
 .header-container {
   display: -webkit-box;
@@ -88,8 +112,6 @@ header {
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden; }
-  .logo:hover {
-    background-color: #650300; }
   @media (max-width: 767px) {
     .logo {
       margin-bottom: 10px;
@@ -178,18 +200,18 @@ footer {
     margin-left: 32px; }
     @media (max-width: 992px) {
       .social-media li {
-        margin-left: 24px; } }
-    @media (max-width: 992px) {
+        margin-left: 24px; }
+        .social-media li:first-child {
+          margin-left: 0px; } }
+    @media (max-width: 375px) {
       .social-media li {
         margin-left: 0px; } }
-    .social-media li li:first-child {
-      margin-left: 0px; }
     .social-media li img {
       height: 48px; }
       @media (max-width: 992px) {
         .social-media li img {
           height: 24px; } }
-      @media (max-width: 992px) {
+      @media (max-width: 375px) {
         .social-media li img {
           height: 20px; } }
 
@@ -234,7 +256,7 @@ footer {
   @media (max-width: 767px) {
     .contact a {
       font-size: 16px; } }
-  @media (max-width: 992px) {
+  @media (max-width: 375px) {
     .contact a {
       font-size: 14px; } }
 
@@ -301,36 +323,63 @@ footer {
         padding-bottom: 8px; } }
 
 /* footer end */
-*, *::before, *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-body {
-  font-family: "Roboto", "Noto Sans", sans-serif, "Microsoft JhengHei";
-  line-height: 1.5; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
-
-a {
-  text-decoration: none; }
-
-/* RWD 圖片 */
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle; }
-
-/* RWD 容器 */
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px; }
+.faq-header {
+  font-family: Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  font-size: 48px;
+  border-left: 8px solid #9F1213;
+  padding-left: 16px;
+  margin-top: 96px; }
   @media (max-width: 992px) {
-    .container {
-      max-width: 720px; } }
+    .faq-header {
+      margin-top: 60px; } }
   @media (max-width: 767px) {
-    .container {
-      max-width: 375px; } }
+    .faq-header {
+      padding-left: 8px;
+      margin-top: 28px;
+      font-size: 28px; } }
+
+.faq-container {
+  margin-top: 60px;
+  margin-bottom: 160px; }
+  @media (max-width: 992px) {
+    .faq-container {
+      margin-top: 40px;
+      margin-bottom: 96px; } }
+  @media (max-width: 767px) {
+    .faq-container {
+      margin-top: 24px;
+      margin-bottom: 56px; } }
+
+.faq-title {
+  font-size: 32px;
+  margin-bottom: 36px; }
+  @media (max-width: 992px) {
+    .faq-title {
+      margin-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .faq-title {
+      font-size: 20px;
+      margin-bottom: 24px; } }
+
+.faq-item h3 {
+  font-size: 20px;
+  margin-bottom: 16px; }
+  @media (max-width: 767px) {
+    .faq-item h3 {
+      margin-bottom: 8px; } }
+
+.faq-item p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  padding-left: 95px; }
+  @media (max-width: 992px) {
+    .faq-item p {
+      margin-bottom: 24px;
+      padding-left: 60px; } }
+  @media (max-width: 767px) {
+    .faq-item p {
+      margin-bottom: 20px;
+      padding-left: 0; } }
 
 /*# sourceMappingURL=all.css.map */
