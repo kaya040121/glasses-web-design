@@ -55,7 +55,7 @@ img {
   vertical-align: middle; }
 
 body {
-  font-family: Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", "Arial", "sans-serif";
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -283,7 +283,7 @@ footer {
 .copright {
   color: #fff;
   padding-bottom: 39px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400; }
   @media (max-width: 992px) {
     .copright {
@@ -323,8 +323,118 @@ footer {
         padding-bottom: 8px; } }
 
 /* footer end */
+.section1 {
+  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") no-repeat center;
+  height: 840px;
+  background-size: cover; }
+  @media (max-width: 767px) {
+    .section1 {
+      height: 394px; } }
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .banner h2 {
+    font-size: 64px;
+    color: #650300;
+    text-align: right;
+    padding-top: 348px; }
+    @media (max-width: 992px) {
+      .banner h2 {
+        padding-top: 372px;
+        font-size: 48px; } }
+    @media (max-width: 767px) {
+      .banner h2 {
+        padding-top: 164px;
+        font-size: 32px; } }
+    .banner h2 span {
+      font-size: 36px;
+      font-weight: 500; }
+      @media (max-width: 992px) {
+        .banner h2 span {
+          font-size: 20px; } }
+      @media (max-width: 767px) {
+        .banner h2 span {
+          font-size: 16px; } }
+
+.section2, .section3, .section4, .section5, .section6 {
+  padding-top: 60px;
+  padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .section2, .section3, .section4, .section5, .section6 {
+      padding-top: 40px;
+      padding-bottom: 56px; } }
+  @media (max-width: 767px) {
+    .section2, .section3, .section4, .section5, .section6 {
+      padding-top: 32px;
+      padding-bottom: 40px; } }
+
+.index-main h3 {
+  text-align: center;
+  font-size: 48px;
+  color: #650300;
+  padding-bottom: 48px; }
+  @media (max-width: 992px) {
+    .index-main h3 {
+      font-size: 32px;
+      padding-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .index-main h3 {
+      font-size: 24px;
+      padding-bottom: 28px; } }
+
+.section2 {
+  background: #FBF2F2; }
+
+.major-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.major-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 23%; }
+  @media (max-width: 992px) {
+    .major-item {
+      max-width: 48%; } }
+  @media (max-width: 767px) {
+    .major-item {
+      max-width: 100%; } }
+  .major-item h6 {
+    color: #650300;
+    font-size: 24px;
+    margin-bottom: 8px; }
+  .major-item p {
+    color: #000000;
+    font-size: 16px; }
+
+.material-icons-outlined {
+  color: #650300;
+  font-size: 84px;
+  margin-bottom: 24px; }
+
 .faq-header {
-  font-family: Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", "Arial", "sans-serif";
   font-size: 48px;
   border-left: 8px solid #9F1213;
   padding-left: 16px;
