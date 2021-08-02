@@ -105,7 +105,7 @@ header {
       text-align: center; } }
 
 .logo {
-  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png") no-repeat;
+  background: url("../images/logo.png") no-repeat;
   width: 80px;
   height: 49px;
   background-size: cover;
@@ -324,7 +324,7 @@ footer {
 
 /* footer end */
 .section1 {
-  background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") no-repeat center;
+  background: url("../images/banner.png") no-repeat center;
   height: 840px;
   background-size: cover; }
   @media (max-width: 767px) {
@@ -377,7 +377,7 @@ footer {
   text-align: center;
   font-size: 48px;
   color: #650300;
-  padding-bottom: 48px; }
+  padding-bottom: 40px; }
   @media (max-width: 992px) {
     .index-main h3 {
       font-size: 32px;
@@ -428,10 +428,77 @@ footer {
     color: #000000;
     font-size: 16px; }
 
-.material-icons-outlined {
+.major .material-icons-outlined {
   color: #650300;
   font-size: 84px;
   margin-bottom: 24px; }
+
+.classic-product-list li:nth-child(2) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse; }
+  @media (max-width: 992px) {
+    .classic-product-list li:nth-child(2) {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.classic-product-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px; }
+  @media (max-width: 992px) {
+    .classic-product-item {
+      margin-bottom: 8px; } }
+  @media (max-width: 767px) {
+    .classic-product-item {
+      position: relative;
+      text-align: center; } }
+  .classic-product-item h4 {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+    color: #9F1213;
+    width: 40%;
+    margin-right: 30px; }
+    @media (max-width: 992px) {
+      .classic-product-item h4 {
+        font-size: 28px;
+        margin-right: 0px; } }
+    @media (max-width: 767px) {
+      .classic-product-item h4 {
+        position: absolute;
+        width: 100%; } }
+  .classic-product-item img {
+    width: 60%; }
+    @media (max-width: 767px) {
+      .classic-product-item img {
+        width: 100%; } }
+  .classic-product-item .material-icons-outlined {
+    font-size: 44px;
+    color: #9F1213;
+    margin-left: 30px;
+    margin-right: 10px;
+    display: inline;
+    vertical-align: middle; }
+    @media (max-width: 992px) {
+      .classic-product-item .material-icons-outlined {
+        font-size: 40px; } }
+
+@media (max-width: 992px) {
+  .section3 {
+    padding-bottom: 32px; } }
+
+@media (max-width: 767px) {
+  .section3 {
+    font-size: 20px;
+    padding-bottom: 20px; } }
 
 .faq-header {
   font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", "Arial", "sans-serif";
