@@ -23,18 +23,6 @@ a {
     text-decoration: none;
 }
 
-// RWD 容器
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
-    @include tablet () {
-        max-width: 720px;
-    }
-    @include mobile () {
-        max-width: 375px;
-    }
-}
 
 
 

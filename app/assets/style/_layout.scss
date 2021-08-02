@@ -1,3 +1,16 @@
+// RWD 容器
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include tablet () {
+        max-width: 720px;
+    }
+    @include mobile () {
+        max-width: 375px;
+    }
+}
+
 /* header */
 header {
     background-color: $primary;    
@@ -42,7 +55,7 @@ header {
     a {
         display: block;
         color: #ffffff;
-        font-size: $font-m;
+        font-size: $font-size-m;
         font-weight: 400;
         padding: 0 32px;
         &:hover {
@@ -102,7 +115,7 @@ footer {
     }
     a {
         color: #fff;
-        font-size: $font-s;
+        font-size: $font-size-s;
         font-weight: 400;
         &:hover {
             background-color: $primary-darken;
@@ -170,19 +183,19 @@ footer {
     a {
         color: #fff;
         display: block;
-        font-size: $font-l;
+        font-size: $font-size-2l;
         font-weight: 400;
         &:hover {
             background-color: $primary-darken;
         }
         @include tablet(){
-            font-size: $font-m;
+            font-size: $font-size-m;
         }
         @include mobile(){
-            font-size: $font-s;
+            font-size: $font-size-s;
         }
         @include extra-small(){
-            font-size: $font-xs;
+            font-size: $font-size-xs;
         }
     }
 } 
@@ -204,13 +217,13 @@ footer {
 .copright {
     color: #fff;
     padding-bottom: 39px;
-    font-size: $font-s;
+    font-size: $font-size-xs;
     font-weight: 400;
     @include tablet(){
         padding-bottom: 32px;
     }
     @include mobile(){
-        font-size: $font-xs;
+        font-size: $font-size-xs;
         padding-bottom: 8px;
     }
 }
@@ -224,7 +237,7 @@ footer {
     a {
         display: block;
         color: #fff;
-        font-size: $font-xs;
+        font-size: $font-size-xs;
         font-weight: 400;
         margin-left: 48px;
         &:hover {
