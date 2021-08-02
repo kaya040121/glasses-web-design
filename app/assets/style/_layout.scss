@@ -33,12 +33,11 @@ header {
 }
 
 .logo {
-    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png")
-      no-repeat;
+    background: url("../images/logo.png") no-repeat;
     width: 80px;
     height: 49px;
     background-size: cover;
-    @include hide-text;    
+    @include hide-text;   
     @include mobile(){
         margin-bottom: 10px;
         width: 50px;

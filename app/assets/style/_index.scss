@@ -1,11 +1,11 @@
 // section1 banner
 
 .section1 {
-    background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") no-repeat center;
+    // background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") no-repeat center;
+    background: url("../images/banner.png") no-repeat center; //本地端圖片資源
     height: 840px;
     background-size: cover;
-    @include mobile(){
-        // background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png") no-repeat center;        
+    @include mobile(){           
         height: 394px;        
     }    
 }
@@ -40,7 +40,7 @@
 }
 
 
-// section header
+// section title
 
 .section2, .section3, .section4, .section5, .section6 {
     padding-top: 60px;
@@ -60,7 +60,7 @@
         text-align: center;
         font-size: $font-size-3l;
         color: $primary-darken;        
-        padding-bottom: 48px;
+        padding-bottom: 40px;
         @include tablet(){
             font-size: $font-size-xl;            
             padding-bottom: 40px;            
@@ -108,10 +108,79 @@
     }
 }
 
-.material-icons-outlined {
-    color: $primary-darken;
-    font-size: 84px;
-    margin-bottom: 24px;
+.major {
+    .material-icons-outlined {
+        color: $primary-darken;
+        font-size: 84px;
+        margin-bottom: 24px;
+    }
 }
 
+
 // section3 classic-product
+
+.classic-product-list {
+    li:nth-child(2) {
+        flex-direction: row-reverse;
+        @include tablet(){
+            flex-direction: row;     
+        }
+    }
+}
+
+.classic-product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    @include tablet(){
+        margin-bottom: 8px;                   
+    }
+    @include mobile(){
+        position: relative;
+        text-align: center;               
+    }    
+    h4 {
+        font-size: $font-size-3l;
+        font-style: italic;
+        font-weight: 900;
+        color: $decoration;
+        width: 40%;
+        margin-right: 30px;
+        @include tablet(){
+            font-size: $font-size-l;
+            margin-right: 0px;                   
+        }
+        @include mobile(){
+            position: absolute;
+            width: 100%;                       
+        }          
+    }
+    img {
+        width: 60%;
+        @include mobile(){
+            width: 100%;            
+        }
+    }    
+    .material-icons-outlined {
+        font-size: 44px;
+        color: $decoration;
+        margin-left: 30px;
+        margin-right: 10px;
+        display: inline;
+        vertical-align: middle;
+        @include tablet(){
+            font-size: 40px;
+        }
+              
+    }
+}
+
+.section3 {
+    @include tablet(){                 
+        padding-bottom: 32px;            
+    }
+    @include mobile(){
+        font-size: $font-size-m;            
+        padding-bottom: 20px;            
+    }
+}
