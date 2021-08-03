@@ -362,15 +362,15 @@ footer {
         .banner h2 span {
           font-size: 16px; } }
 
-.section-major, .section-classic-product, .section-signature-product, .section-recommend, .section-contact-us {
+.section-major, .section-classic-product, .section-co-branding, .section-recommend, .section-contact-us {
   padding-top: 60px;
   padding-bottom: 80px; }
   @media (max-width: 992px) {
-    .section-major, .section-classic-product, .section-signature-product, .section-recommend, .section-contact-us {
+    .section-major, .section-classic-product, .section-co-branding, .section-recommend, .section-contact-us {
       padding-top: 40px;
       padding-bottom: 56px; } }
   @media (max-width: 767px) {
-    .section-major, .section-classic-product, .section-signature-product, .section-recommend, .section-contact-us {
+    .section-major, .section-classic-product, .section-co-branding, .section-recommend, .section-contact-us {
       padding-top: 32px;
       padding-bottom: 40px; } }
 
@@ -504,21 +504,21 @@ footer {
     font-size: 20px;
     padding-bottom: 20px; } }
 
-.section-signature-product {
-  background: url("/assets/images/bg.png") no-repeat center;
+.section-co-branding {
+  background: url("../images/bg.png") no-repeat center;
   background-size: cover; }
 
-.signature-product h3 {
+.co-branding h3 {
   color: #FFFFFF; }
   @media (max-width: 992px) {
-    .signature-product h3 {
+    .co-branding h3 {
       padding-bottom: 32px; } }
   @media (max-width: 767px) {
-    .signature-product h3 {
+    .co-branding h3 {
       padding-bottom: 20px;
       font-size: 20px; } }
 
-.signature-product-list {
+.co-branding-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +528,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.signature-product-item {
+.co-branding-item {
   max-width: 45%;
   margin-left: 15px;
   margin-right: 15px;
@@ -543,18 +543,18 @@ footer {
           align-items: center;
   background-color: #ffffff; }
   @media (max-width: 767px) {
-    .signature-product-item {
+    .co-branding-item {
       max-width: 100%;
       margin-bottom: 16px; } }
-  .signature-product-item img {
+  .co-branding-item img {
     position: relative;
     opacity: 0.5; }
-  .signature-product-item h4 {
+  .co-branding-item h4 {
     position: absolute;
     font-size: 72px;
     color: #AA0601; }
     @media (max-width: 992px) {
-      .signature-product-item h4 {
+      .co-branding-item h4 {
         font-size: 32px; } }
 
 .faq-header {
