@@ -104,7 +104,8 @@ header {
       border: 1px solid #fff;
       text-align: center; } }
 
-.logo {
+.logo a {
+  display: block;
   background: url("../images/logo.png") no-repeat;
   width: 80px;
   height: 49px;
@@ -113,7 +114,7 @@ header {
   white-space: nowrap;
   overflow: hidden; }
   @media (max-width: 767px) {
-    .logo {
+    .logo a {
       margin-bottom: 10px;
       width: 50px;
       height: 30px; } }
@@ -323,12 +324,12 @@ footer {
         padding-bottom: 8px; } }
 
 /* footer end */
-.section1 {
+.section-banner {
   background: url("../images/banner.png") no-repeat center;
   height: 840px;
   background-size: cover; }
   @media (max-width: 767px) {
-    .section1 {
+    .section-banner {
       height: 394px; } }
 
 .banner {
@@ -361,15 +362,15 @@ footer {
         .banner h2 span {
           font-size: 16px; } }
 
-.section2, .section3, .section4, .section5, .section6 {
+.section-major, .section-classic-product, .section-signature-product, .section-recommend, .section-contact-us {
   padding-top: 60px;
   padding-bottom: 80px; }
   @media (max-width: 992px) {
-    .section2, .section3, .section4, .section5, .section6 {
+    .section-major, .section-classic-product, .section-signature-product, .section-recommend, .section-contact-us {
       padding-top: 40px;
       padding-bottom: 56px; } }
   @media (max-width: 767px) {
-    .section2, .section3, .section4, .section5, .section6 {
+    .section-major, .section-classic-product, .section-signature-product, .section-recommend, .section-contact-us {
       padding-top: 32px;
       padding-bottom: 40px; } }
 
@@ -387,7 +388,7 @@ footer {
       font-size: 24px;
       padding-bottom: 28px; } }
 
-.section2 {
+.section-major {
   background: #FBF2F2; }
 
 .major-list {
@@ -416,10 +417,13 @@ footer {
   max-width: 23%; }
   @media (max-width: 992px) {
     .major-item {
-      max-width: 48%; } }
+      max-width: 45%;
+      margin-bottom: 32px;
+      padding: 0 30px; } }
   @media (max-width: 767px) {
     .major-item {
-      max-width: 100%; } }
+      max-width: 100%;
+      padding: 0 45px; } }
   .major-item h6 {
     color: #650300;
     font-size: 24px;
@@ -492,13 +496,66 @@ footer {
         font-size: 40px; } }
 
 @media (max-width: 992px) {
-  .section3 {
+  .section-classic-product {
     padding-bottom: 32px; } }
 
 @media (max-width: 767px) {
-  .section3 {
+  .section-classic-product {
     font-size: 20px;
     padding-bottom: 20px; } }
+
+.section-signature-product {
+  background: url("/assets/images/bg.png") no-repeat center;
+  background-size: cover; }
+
+.signature-product h3 {
+  color: #FFFFFF; }
+  @media (max-width: 992px) {
+    .signature-product h3 {
+      padding-bottom: 32px; } }
+  @media (max-width: 767px) {
+    .signature-product h3 {
+      padding-bottom: 20px;
+      font-size: 20px; } }
+
+.signature-product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.signature-product-item {
+  max-width: 45%;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff; }
+  @media (max-width: 767px) {
+    .signature-product-item {
+      max-width: 100%;
+      margin-bottom: 16px; } }
+  .signature-product-item img {
+    position: relative;
+    opacity: 0.5; }
+  .signature-product-item h4 {
+    position: absolute;
+    font-size: 72px;
+    color: #AA0601; }
+    @media (max-width: 992px) {
+      .signature-product-item h4 {
+        font-size: 32px; } }
 
 .faq-header {
   font-family: "Roboto", "Noto Sans TC", "Microsoft JhengHei", "Arial", "sans-serif";
