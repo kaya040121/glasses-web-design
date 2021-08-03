@@ -1,7 +1,5 @@
-// section1 banner
-
-.section1 {
-    // background: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner.png") no-repeat center;
+// section-banner
+.section-banner {
     background: url("../images/banner.png") no-repeat center; //本地端圖片資源
     height: 840px;
     background-size: cover;
@@ -41,8 +39,7 @@
 
 
 // section title
-
-.section2, .section3, .section4, .section5, .section6 {
+.section-major, .section-classic-product, .section-signature-product, .section-recommend, .section-contact-us {
     padding-top: 60px;
     padding-bottom: 80px;
     @include tablet(){        
@@ -73,9 +70,8 @@
 }
 
 
-// section2 major
-
-.section2 {
+// section-major
+.section-major {
     background: $secondary;
 }
 
@@ -92,10 +88,13 @@
     align-items: center;    
     max-width: 23%;
     @include tablet(){
-        max-width: 48%;                    
+        max-width: 45%;
+        margin-bottom: 32px;
+        padding: 0 30px;                    
     }
     @include mobile(){
-        max-width: 100%;            
+        max-width: 100%;
+        padding: 0 45px;            
     }    
     h6 {
         color: $primary-darken;
@@ -117,8 +116,7 @@
 }
 
 
-// section3 classic-product
-
+// section-classic-product
 .classic-product-list {
     li:nth-child(2) {
         flex-direction: row-reverse;
@@ -175,7 +173,7 @@
     }
 }
 
-.section3 {
+.section-classic-product {
     @include tablet(){                 
         padding-bottom: 32px;            
     }
@@ -184,3 +182,56 @@
         padding-bottom: 20px;            
     }
 }
+
+// section-signature-product
+.section-signature-product {
+    background: url("/assets/images/bg.png") no-repeat center;
+    background-size: cover;
+}
+
+.signature-product {
+    h3 {
+        color: $light;
+        @include tablet(){                 
+            padding-bottom: 32px;            
+        }
+        @include mobile(){
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+    }
+}
+
+.signature-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.signature-product-item {
+    max-width: 45%;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;        
+    @include mobile(){
+        max-width: 100%;
+        margin-bottom: 16px;                    
+    }
+    img {
+        position: relative;
+        opacity: 0.5;                
+    }
+    h4 {
+        position: absolute;
+        font-size: $font-size-5l;
+        color: $primary;
+        @include tablet(){
+            font-size: $font-size-xl;                        
+        }                   
+    }     
+}
+
+
