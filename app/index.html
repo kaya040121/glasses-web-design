@@ -78,7 +78,7 @@ current: index
         <h3>顧客推薦</h3>
         <ul class="recommend-list">
           <li class="recommend-item">
-            <img src="assets/images/rec-1.png" alt="">
+            <img src="assets/images/rec-1.png" alt="product photo">
             <div class="recommend-content">
               <h6 class="name">Jessy</h6>
               <p class="customer-content">眼鏡品質優良，下次還會想來這邊購買！</p>
@@ -86,7 +86,7 @@ current: index
             </div>
           </li>
           <li class="recommend-item">
-            <img src="assets/images/rec-2.png" alt="">
+            <img src="assets/images/rec-2.png" alt="product photo">
             <div class="recommend-content">
               <h6 class="name">凱倫</h6>
               <p class="customer-content">做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
@@ -94,7 +94,7 @@ current: index
             </div>
           </li>
           <li class="recommend-item">
-            <img src="assets/images/rec-3.png" alt="">
+            <img src="assets/images/rec-3.png" alt="product photo">
             <div class="recommend-content">
               <h6 class="name">悠悠</h6>
               <p class="customer-content">謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
@@ -102,7 +102,7 @@ current: index
             </div>
           </li>
           <li class="recommend-item">
-            <img src="assets/images/rec-4.png" alt="">
+            <img src="assets/images/rec-4.png" alt="product photo">
             <div class="recommend-content">
               <h6 class="name">Kyuan</h6>
               <p class="customer-content">服務很好，品質沒有任何問題，非常喜歡。</p>
@@ -113,27 +113,31 @@ current: index
       </div>
     </section>
     <section class="section-contact-us">
-      <div class="contact-us container">
+      <div class="contact-us">
         <h3>聯絡我們</h3>
-        <form action="/index.html" method="post">
+        <form class="form-contact" action="/index.html" method="post">
           <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-          <label for="myName">姓名</label><br>
-          <input name="myName" id="myName" type="text">
-
-          <label for="tel">聯絡電話</label><br>
-          <input name="tel" id="myName" type="tel">
-
-          <label for="mail">電子郵件</label><br>
-          <input name="mail" id="mail" type="mail">
-
-          <label for="op">意見反應</label><br>
-          <input name="op" id="op" type="text">
-
-          <input type="checkbox" value="agree">
-          <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-
-          <input type="submit" value="確認送出">
-
+          <div class="form-item">
+            <label for="myName">姓名</label><br>
+            <input name="myName" class="myName" id="myName" type="text" placeholder="陳小明" required>
+          </div>
+          <div class="form-item">
+            <label for="tel">聯絡電話</label><br>
+            <input name="tel" class="tel" id="tel" type="tel" placeholder="0912-345-678" required>
+          </div>
+          <div class="form-item">
+            <label for="email">電子郵件</label><br>
+            <input name="email" class="email" id="email" type="email" placeholder="example@email.com" required>
+          </div>
+          <div class="form-item">
+            <label for="suggestion">意見反應</label><br>
+            <input name="suggestion" class="suggestion" id="suggestion" type="text" placeholder="請輸入您的意見" required>
+          </div>
+          <div class="form-privacy">
+            <input type="checkbox" value="privacy-agree" class="checkbox" required>
+            <label for="privacy" class="privacy">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+          </div>
+          <input name="submit" class="submit" type="submit" value="確認送出">
         </form>
       </div>
     </section>
