@@ -631,16 +631,13 @@ footer {
 .section-contact-us {
   background: #FBF2F2; }
   .section-contact-us .container {
-    width: 55%;
-    margin: 0 auto;
-    padding: 0 15px; }
+    width: 64%; }
     @media (max-width: 992px) {
       .section-contact-us .container {
-        max-width: 720px; } }
+        width: 60%; } }
     @media (max-width: 767px) {
       .section-contact-us .container {
-        max-width: 375px;
-        width: 90%; } }
+        width: 92%; } }
 
 .contact-us h3 {
   color: #000000;
