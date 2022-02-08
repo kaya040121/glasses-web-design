@@ -34,7 +34,7 @@ header {
 
 .logo {
     a {
-        display: block;
+        // display: block; 圖片取代文字技巧：使用block讓點擊區塊延伸
         background: url("../images/logo.png") no-repeat;
         width: 80px;
         height: 49px;
@@ -54,8 +54,7 @@ header {
     @include mobile(){
         width: 100%;
     }
-    a {
-        display: block;
+    a {        
         color: #ffffff;
         font-size: $font-size-m;
         font-weight: 400;
@@ -183,8 +182,7 @@ footer {
 
 .contact {
     a {
-        color: #fff;
-        display: block;
+        color: #fff;        
         font-size: $font-size-2l;
         font-weight: 400;
         &:hover {
@@ -237,7 +235,6 @@ footer {
         flex-direction: column;
     }
     a {
-        display: block;
         color: #fff;
         font-size: $font-size-xs;
         font-weight: 400;

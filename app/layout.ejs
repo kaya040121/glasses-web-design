@@ -23,6 +23,8 @@
   <!-- icon -->
   <!-- Material icon -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <!-- aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- css -->
   <!-- all.css -->
   <link rel="stylesheet" href="./assets/style/all.css">
@@ -30,6 +32,7 @@
 </head>
 
 <body>
+  <!-- header -->
   <header>
     <div class="header-container">
       <h1 class="logo"><a href="./index.html">公司LOGO</a></h1>
@@ -44,6 +47,7 @@
 
   <%- contents %>
 
+    <!-- footer -->
     <footer>
       <div class="container">
         <div class="footer-wrap">
@@ -85,6 +89,13 @@
         </div>
       </div>
     </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(); //如需客製化調整，將此行替換成"AOS全域設計"
+    </script>
+
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>

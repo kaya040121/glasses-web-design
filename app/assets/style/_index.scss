@@ -1,6 +1,6 @@
 // section-banner
 .section-banner {
-    background: url("../images/banner.png") no-repeat center; //本地端圖片資源
+    background: url("../images/banner-compressed.jpg") no-repeat center; //本地端圖片資源
     height: 840px;
     background-size: cover;
     @include mobile(){           
@@ -185,7 +185,7 @@
 
 // section-co-branding
 .section-co-branding {
-    background: url("../images/bg.png") no-repeat center;
+    background: url("../images/bg-compressed.jpg") no-repeat center;
     background-size: cover;
 }
 
@@ -233,6 +233,8 @@
     }     
 }
 
+
+
 // section-recommend
 .recommend-list {
     display: flex;
@@ -243,6 +245,7 @@
     }
     .recommend-item {
         max-width: 23%;
+        //建議不要寫死高度
         height: 460px;
         position: relative;
         border-radius: 4px;
@@ -310,12 +313,57 @@
     }
 }
 
+// flex stretch 寫法
+// .r-list {
+//     display: flex;
+//     .flexItem {
+//         width: 23%;
+//         margin: 5px;
+//         border: 1px solid #DEE2E6;
+//         box-shadow: 0px 2px 6px #00000029;
+//         display: flex;
+//         flex-direction: column;
+//         &__img {
+//             max-width: 100%;
+//             display: block;
+//         }
+//         &__body {
+//             height: 100%;
+//             display: flex;
+//             flex-direction: column;
+//             padding: 1rem;
+//         }
+//         &__text {
+//             margin-bottom: 1rem;
+//         }
+//         &__title {
+//             margin-bottom: .5rem;
+//         }
+//         &__date {
+//             margin-top: auto;
+//           }
+//     }
+// }
+
 // section-contact-us
 .section-contact-us {
     background: $secondary;
+    
+    // (提醒：不是直接調整 .section-contact-us .container 的 %，
+    //  .container 本身是容器，會用 max-width 非 %，
+    // 而容器內部的寬度用 % 設定，所以這邊會在對 form 調整寬度)
+    // .container {
+    //     width: 64%; 
+    //     @include tablet(){
+    //         width: 60%;                      
+    //     }        
+    //     @include mobile () {            
+    //         width: 92%;
+    //     }
+    // }
 }
 
-.contact-us {
+.contact-us {    
     h3 {
         color: $dark;
         padding-bottom: 24px;        
@@ -327,14 +375,23 @@
 }
 
 .form-contact {
-    max-width: 730px;
-    margin: 0 auto;    
-    @include tablet(){
-        max-width: 450px;
-    }
-    @include mobile(){                
-        max-width: 345px;                                    
-    }
+    width: 64%;
+    margin: 0 auto; 
+        @include tablet(){
+            width: 60%;                      
+        }        
+        @include mobile () {            
+            width: 92%;
+        }
+    // (建議：可以在 .form-contact 外層套用 .container 再使用 % 調整表格寬度)
+    // max-width: 730px;
+    // margin: 0 auto;       
+    // @include tablet(){
+    //     max-width: 450px;
+    // }
+    // @include mobile(){                
+    //     max-width: 345px;                                    
+    // }
     p {
         font-size: $font-size-m;
         font-weight: 400;
@@ -351,7 +408,9 @@
         width: 100%;
         height: 50px;
         padding-left: 16px;
-        // padding-top: 12px;                      
+        // padding-top: 12px;
+        background-color: $secondary;
+        border-width: 1px;                      
         @include tablet(){            
             height: 36px;
         }        
@@ -371,10 +430,20 @@
     }
     .suggestion {
         width: 100%;
-        height: 136px;        
+        height: 136px;
+        padding-left: 16px;
+        padding-top: 12px;
         @include tablet(){            
             height: 100px;
         }
+    }
+    textarea { 
+        resize: none;
+        background-color: $secondary;
+    }
+    ::placeholder {
+        color: $dark;        
+        opacity: 0.2;
     }
     .checkbox {
         width: 24px;
@@ -409,6 +478,9 @@
         font-size: $font-size-s;
         font-weight: 700;
         border: none;
+        &:hover {
+            background-color: $primary-darken;
+        }
         @include tablet(){            
             width: 210px;
         }        
